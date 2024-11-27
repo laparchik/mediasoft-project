@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Phone book</title>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="block">
+        <header>
+            <div class="logo"><img src="images/3b35abe635807a65599a32327749df7e.jpg" alt="Не сегодня" width="33px" height="33px"></div>
+            <div class="search"><input type="search" id="search" placeholder="Поиск по номеру телефона"></div>
+        </header>
+        <main>
+            <div id="contactsContainer"></div>  
+        </main>
+        <footer>           
+            <button class="add" id="openModal">Добавить</button>
+
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Добавить контакт</h2>
+                    <form id="contactForm">
+                        <label for="logo">Логотип URL:</label>
+                        <input type="text" id="logo" required>
+                        
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" required>
+                        
+                        <label for="phone">Телефон:</label>
+                        <input type="text" id="phone" required>
+                        
+                        <button type="submit">Добавить</button>
+                    </form>
+                </div>
+            </div>
+        
+                                        
+        </footer>
+        <script src="scripts/modalo.js"></script>
+    </div>
+   </div> 
+</body>
+</html>
